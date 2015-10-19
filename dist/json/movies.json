@@ -1,0 +1,18 @@
+{
+  "movies": [
+    {
+      "title": "The Lion King",
+      "year": "1994",
+      "byline": "Music by Elton John and Hans Zimmer",
+      "soundtrack": [
+        {
+          "song_title":"The Circle of Life",
+          "song_artists":"Lans M.",
+          "youtube_id":"",
+          "spotify_uri":"",
+          "itunes_url":""
+        }
+      ]
+    }
+  ]
+}

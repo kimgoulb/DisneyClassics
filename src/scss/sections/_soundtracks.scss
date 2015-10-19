@@ -1,0 +1,23 @@
+.soundtracks-list-wrapper {
+  .soundtracks-list {
+    .soundtrack { width:100%;
+
+      &.in-view { 
+        .img-wrapper img { padding:0; }
+      }
+
+      .max-wrap { max-width: 1140px; padding:15px 0; margin:0 auto; overflow: hidden; }
+      .inner-wrapper { display: table; width: 100%; height: 100%; }
+      .left-wrap, .right-wrap { width:50%; display: table-cell; vertical-align: middle;
+        @include respond-to(mobile) { width:100%; float: none; }
+      }
+      .right-wrap {  padding-left: 60px;
+        @include respond-to(mobile) { padding-left: 20px; }
+      }
+      .img-wrapper { position: relative; width:100%; padding-bottom: 100%; height: 0; background-color: #999; overflow: hidden;
+        @include respond-to(mobile) { width:100%; float: none; }
+        img, .st-img { width:100%; height:100%; padding:7%; display:block; position:absolute; top:0; left:0; border:0; }
+      }
+    }
+  }
+}

@@ -1,0 +1,486 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2015 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Hoftype
+ * License URL: http://www.fontspring.com/licenses/hoftype/webfont
+ *
+ *
+ */
+@font-face {
+  font-family: 'ashburylight';
+  src: url("../fonts/Ashbury/AshburyLig-webfont.eot");
+  src: url("../fonts/Ashbury/AshburyLig-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Ashbury/AshburyLig-webfont.woff2") format("woff2"), url("../fonts/Ashbury/AshburyLig-webfont.woff") format("woff"), url("../fonts/Ashbury/AshburyLig-webfont.ttf") format("truetype"), url("../fonts/Ashbury/AshburyLig-webfont.svg#ashburylight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url("../fonts/Montserrat/montserrat-regular-webfont.eot");
+  src: url("../fonts/Montserrat/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/Montserrat/montserrat-regular-webfont.woff") format("woff"), url("../fonts/Montserrat/montserrat-regular-webfont.ttf") format("truetype"), url("../fonts/Montserrat/montserrat-regular-webfont.svg#montserratregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratsemi_bold';
+  src: url("../fonts/Montserrat/montserrat-semibold-webfont.eot");
+  src: url("../fonts/Montserrat/montserrat-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/montserrat-semibold-webfont.woff2") format("woff2"), url("../fonts/Montserrat/montserrat-semibold-webfont.woff") format("woff"), url("../fonts/Montserrat/montserrat-semibold-webfont.ttf") format("truetype"), url("../fonts/Montserrat/montserrat-semibold-webfont.svg#montserratsemi_bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*==========================================================================
+   COLORS
+ ========================================================================== */
+/*==========================================================================
+   MEDIA QUERIES // example @include respond-to(mobile) { }
+ ========================================================================== */
+/*
+  @include respond-to(mobile) {}
+  @include respond-to(tablet) {}
+  @include respond-to(desktopSm) {}
+  @include respond-to(desktopLg) {}
+*/
+/*==========================================================================
+   FONTS
+ ========================================================================== */
+/*==========================================================================
+   FUNCTIONS
+ ========================================================================== */
+/*==========================================================================
+   MIXINS
+ ========================================================================== */
+/*==========================================================================
+   SPRITES
+ ========================================================================== */
+/* reset
+----------------------------------------------*/
+/* line 15, ../scss/base/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* line 22, ../scss/base/_reset.scss */
+html {
+  line-height: 1;
+  height: 100%;
+}
+
+/* line 27, ../scss/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 31, ../scss/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 36, ../scss/base/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 42, ../scss/base/_reset.scss */
+q, blockquote {
+  quotes: none;
+}
+
+/* line 46, ../scss/base/_reset.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 51, ../scss/base/_reset.scss */
+a img {
+  border: none;
+}
+
+/* line 55, ../scss/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../scss/base/_sprites.scss */
+.single-arrow {
+  background-image: url('../img/icons-s0e5c5926d2.png');
+  background-position: 0 -79px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  height: 19px;
+  width: 34px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (-o-min-device-pixel-ratio: 2 / 1), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
+  /* line 1, ../scss/base/_sprites.scss */
+  .single-arrow {
+    background-image: url('../img/icons2x-sbee4bf6089.png');
+    background-size: 34px 88px;
+    background-position: 0 -69px;
+  }
+}
+
+/* line 2, ../scss/base/_sprites.scss */
+.double-arrow {
+  background-image: url('../img/icons-s0e5c5926d2.png');
+  background-position: -2px -39px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (-o-min-device-pixel-ratio: 2 / 1), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
+  /* line 2, ../scss/base/_sprites.scss */
+  .double-arrow {
+    background-image: url('../img/icons2x-sbee4bf6089.png');
+    background-size: 34px 88px;
+    background-position: -2px -34px;
+  }
+}
+
+/* line 3, ../scss/base/_sprites.scss */
+.close-icon {
+  background-image: url('../img/icons-s0e5c5926d2.png');
+  background-position: -3px 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  height: 29px;
+  width: 28px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 2), all and (min--moz-device-pixel-ratio: 2), all and (-o-min-device-pixel-ratio: 2 / 1), all and (min-device-pixel-ratio: 2), all and (min-resolution: 192dpi), all and (min-resolution: 2dppx) {
+  /* line 3, ../scss/base/_sprites.scss */
+  .close-icon {
+    background-image: url('../img/icons2x-sbee4bf6089.png');
+    background-size: 34px 88px;
+    background-position: -3px 0;
+  }
+}
+
+/* Base
+----------------------------------------------*/
+/* line 3, ../scss/base/_base.scss */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+/* line 4, ../scss/base/_base.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 6, ../scss/base/_base.scss */
+html {
+  height: 100%;
+}
+
+/* line 9, ../scss/base/_base.scss */
+body {
+  font-family: 'ashburylight', Times, serif;
+  font-weight: lighter;
+  color: #fff;
+  background-color: #000;
+  font-size: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 11, ../scss/base/_base.scss */
+html.locked, body.locked {
+  overflow: hidden;
+}
+
+/* line 12, ../scss/base/_base.scss */
+.ws-credit {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+/* line 14, ../scss/base/_base.scss */
+p, li, dd {
+  line-height: 1.5em;
+}
+
+/* line 24, ../scss/base/_base.scss */
+::-moz-selection {
+  background-color: #ddd;
+}
+
+/* line 24, ../scss/base/_base.scss */
+::selection {
+  background-color: #ddd;
+}
+
+/* line 26, ../scss/base/_base.scss */
+::-webkit-input-placeholder {
+  color: #ebebeb;
+}
+
+/* line 28, ../scss/base/_base.scss */
+::-moz-placeholder {
+  color: #ebebeb;
+}
+
+/* line 29, ../scss/base/_base.scss */
+:-ms-input-placeholder {
+  color: #ebebeb;
+}
+
+/* Headings
+----------------------------------------------*/
+/* line 34, ../scss/base/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: lighter;
+}
+
+/* line 35, ../scss/base/_base.scss */
+h1 {
+  font-size: 70px;
+  line-height: 80px;
+}
+
+/* line 36, ../scss/base/_base.scss */
+h2 {
+  font-size: 60px;
+  line-height: 70px;
+}
+
+/* line 37, ../scss/base/_base.scss */
+h3 {
+  font-size: 50px;
+  line-height: 40px;
+}
+
+/* line 38, ../scss/base/_base.scss */
+h4 {
+  font-size: 35px;
+  line-height: 45px;
+}
+
+/* line 40, ../scss/base/_base.scss */
+p {
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 30px;
+  color: #111;
+}
+
+/* links
+----------------------------------------------*/
+/* line 44, ../scss/base/_base.scss */
+a, a:link, a:visited {
+  text-decoration: none;
+  color: #111;
+}
+
+/* line 45, ../scss/base/_base.scss */
+a:hover, a:active {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Blockquote
+----------------------------------------------*/
+/* line 49, ../scss/base/_base.scss */
+blockquote {
+  font-size: 2.1875em;
+  line-height: 45px;
+  text-align: center;
+  color: #333;
+}
+
+/* Media 
+----------------------------------------------*/
+/* line 53, ../scss/base/_base.scss */
+img, video {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 54, ../scss/base/_base.scss */
+figcaption {
+  font-size: 85%;
+}
+
+/* Lists
+----------------------------------------------*/
+/* line 58, ../scss/base/_base.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Tables
+----------------------------------------------*/
+/* Videos
+----------------------------------------------*/
+/* line 66, ../scss/base/_base.scss */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+/* line 67, ../scss/base/_base.scss */
+.video-wrapper video, .video-wrapper embed, .video-wrapper iframe {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Buttons
+----------------------------------------------*/
+/* line 72, ../scss/base/_base.scss */
+.simple-btn {
+  display: inline-block;
+  margin: 15px auto;
+  color: #666;
+  border: solid 1px #888;
+  padding: 10px 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* line 73, ../scss/base/_base.scss */
+.simple-btn:link, .simple-btn:visited {
+  color: #666;
+}
+/* line 74, ../scss/base/_base.scss */
+.simple-btn:hover {
+  color: #333;
+  border: solid 1px #333;
+}
+
+/* Form
+----------------------------------------------*/
+/* Iframe
+----------------------------------------------*/
+/* line 86, ../scss/base/_base.scss */
+iframe {
+  width: 100%;
+  height: auto;
+}
+
+/* line 3, ../scss/sections/_soundtracks.scss */
+.soundtracks-list-wrapper .soundtracks-list .soundtrack {
+  width: 100%;
+}
+/* line 6, ../scss/sections/_soundtracks.scss */
+.soundtracks-list-wrapper .soundtracks-list .soundtrack.in-view .img-wrapper img {
+  padding: 0;
+}
+/* line 9, ../scss/sections/_soundtracks.scss */
+.soundtracks-list-wrapper .soundtracks-list .soundtrack .max-wrap {
+  max-width: 1140px;
+  padding: 15px 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 10, ../scss/sections/_soundtracks.scss */
+.soundtracks-list-wrapper .soundtracks-list .soundtrack .inner-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 11, ../scss/sections/_soundtracks.scss */
+.soundtracks-list-wrapper .soundtracks-list .soundtrack .left-wrap, .soundtracks-list-wrapper .soundtracks-list .soundtrack .right-wrap {
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}
+@media all and (max-width: 767px) {
+  /* line 11, ../scss/sections/_soundtracks.scss */
+  .soundtracks-list-wrapper .soundtracks-list .soundtrack .left-wrap, .soundtracks-list-wrapper .soundtracks-list .soundtrack .right-wrap {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 14, ../scss/sections/_soundtracks.scss */
+.soundtracks-list-wrapper .soundtracks-list .soundtrack .right-wrap {
+  padding-left: 60px;
+}
+@media all and (max-width: 767px) {
+  /* line 14, ../scss/sections/_soundtracks.scss */
+  .soundtracks-list-wrapper .soundtracks-list .soundtrack .right-wrap {
+    padding-left: 20px;
+  }
+}
+/* line 17, ../scss/sections/_soundtracks.scss */
+.soundtracks-list-wrapper .soundtracks-list .soundtrack .img-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  background-color: #999;
+  overflow: hidden;
+}
+@media all and (max-width: 767px) {
+  /* line 17, ../scss/sections/_soundtracks.scss */
+  .soundtracks-list-wrapper .soundtracks-list .soundtrack .img-wrapper {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 19, ../scss/sections/_soundtracks.scss */
+.soundtracks-list-wrapper .soundtracks-list .soundtrack .img-wrapper img, .soundtracks-list-wrapper .soundtracks-list .soundtrack .img-wrapper .st-img {
+  width: 100%;
+  height: 100%;
+  padding: 7%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+}
