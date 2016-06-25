@@ -1,23 +1,76 @@
-.soundtracks-list-wrapper {
+.soundtracks-list-wrapper { padding:120px 50px;
+  @include respond-to(mobile) { padding:0px; }
+  .next-s, .prev-s { z-index: 100; position: fixed; left:50%; margin-left: 60px;
+    @include respond-to(mobile) { display: none; }
+  }
+  .prev-s { top:125px; @include transform(rotate(180deg)); }
+  .next-s { bottom: 125px; }
   .soundtracks-list {
     .soundtrack { width:100%;
+      @include respond-to(mobile) { height: auto !important; }
 
       &.in-view { 
+        .st-img { @include transform(scale(1)); }
         .img-wrapper img { padding:0; }
       }
 
-      .max-wrap { max-width: 1140px; padding:15px 0; margin:0 auto; overflow: hidden; }
-      .inner-wrapper { display: table; width: 100%; height: 100%; }
-      .left-wrap, .right-wrap { width:50%; display: table-cell; vertical-align: middle;
+      .max-wrap { max-width: 1240px; padding:5px 0; margin:0 auto; overflow: hidden; height: 100%; }
+      .inner-wrapper { width: 100%; height: 100%; }
+      .left-wrap, .right-wrap { width:50%; height: 100%; float:left; //display: table-cell; vertical-align: middle;
         @include respond-to(mobile) { width:100%; float: none; }
       }
       .right-wrap {  padding-left: 60px;
-        @include respond-to(mobile) { padding-left: 20px; }
+        @include respond-to(mobile) { padding: 20px; }
       }
-      .img-wrapper { position: relative; width:100%; padding-bottom: 100%; height: 0; background-color: #999; overflow: hidden;
-        @include respond-to(mobile) { width:100%; float: none; }
-        img, .st-img { width:100%; height:100%; padding:7%; display:block; position:absolute; top:0; left:0; border:0; }
+      .img-wrapper { position: relative; width:100%; height: 100%; overflow: hidden; text-align:center; // background-color: #333; display: table;
+        @include respond-to(mobile) { height:0; padding-bottom:100%; }
+        .st-img { position: relative; width: 100%; height: 100%; background-position: center center; background-size: cover; @include transform(scale(.8));
+          @include respond-to(mobile) { position: absolute; @include transform(scale(1) !important); }
+        }
+        img { height: 100%; width: auto; max-width: 650px; max-height: 650px; display: inline-block; vertical-align: middle;
+          @include respond-to(mobile) { height: auto; width: 100% !important; }
+        } //height:90%; display:block; position:absolute; top:0; left:0; border:0; }
+        .helper { display: inline-block; vertical-align: middle; width:0; height: 100%; }
+      }
+      .txt-wrapper { display: table; height: 100%;
+        .content { display: table-cell; vertical-align: middle; }
+        h2 { font-size: 50px; line-height: 60px;
+          @include respond-to(mobile) { font-size: 35px; line-height: 45px; }
+        }
       }
     }
   }
+}
+
+.st-bg {
+  position: fixed;
+  top:0;
+  left:0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-attachment: fixed;
+  background-size: cover;
+  // -webkit-filter: blur(15px);
+  // -moz-filter: blur(15px);
+  // -o-filter: blur(15px);
+  // -ms-filter: blur(15px);
+  // filter: blur(15px);
+
+  &:nth-child(1) { z-index: 10; }
+  &:nth-child(2) { z-index: 9; }
+  &:nth-child(3) { z-index: 8; }
+  &:nth-child(4) { z-index: 7; }
+  &:nth-child(5) { z-index: 6; }
+}
+.st-bg-overlay {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.6);
+  z-index: 20;
 }

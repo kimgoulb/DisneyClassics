@@ -1,0 +1,21 @@
+.intro-wrapper { background-color: #222; width:100%; height: 100%;
+  @include respond-to(mobile) { height: auto !important; }
+  .max-wrap { max-width: 1240px; margin:0 auto; height: 100%; display: table;
+    @include respond-to(mobile) { padding:40px 30px; display:block; }
+  }
+  .inner-wrapper { display: table-cell; vertical-align: middle; height: 100%; }
+  .headline, .description { width: 50%; float: left;
+    @include respond-to(mobile) { width:100%; float:none; }
+  }
+  .headline {
+    .txt-wrapper { max-width: 570px; display: inline-block; }
+    h1 { line-height: 70px; }
+    h3 { @include MontserratReg(); font-size: emCal(18px); line-height: 21px; display: inline-block; vertical-align: middle; text-transform: uppercase; letter-spacing: 1px; margin-top: 20px; }
+    .bar { width: 40px; height: 2px; display: inline-block; vertical-align: middle; margin-right: 10px; background-color: #fff; }
+  }
+  .description { padding-left: 60px;
+    @include respond-to(mobile) { padding: 20px; }
+    p { font-size: emCal(30px); line-height: 40px; color:#d2d2d2; max-width: 500px; }
+    .simple-btn { margin-top: 50px; }
+  }
+}

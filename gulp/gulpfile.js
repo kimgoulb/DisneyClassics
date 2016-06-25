@@ -69,7 +69,8 @@ gulp.task('scripts:vendor', [], function(){
       paths.app + '/js/vendor/Placeholders.min.js',
       paths.app + '/js/vendor/respond.min.js',
       paths.app + '/js/vendor/selectivizr.min.js',
-      paths.app + '/js/vendor/html5shiv.js'
+      paths.app + '/js/vendor/html5shiv.js',
+      paths.app + '/js/vendor/jquery-ui.min.js'
     ])
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest( paths.app + '/js'))
